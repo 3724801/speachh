@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recognition Assistant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Voice Recognition Assistant</h1>
+        
+        <div class="text-display">
+            <textarea id="output" readonly placeholder="Your speech will appear here..."></textarea>
+        </div>
+
+        <div class="status" id="status-container">
+            <span id="status-text">Status: Ready</span>
+        </div>
+
+        <div class="visualization">
+            <canvas id="visualizer"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn">
+                <i class="ri-mic-line"></i>
+                Start Listening
+            </button>
+            <button id="clearBtn" class="btn">
+                <i class="ri-delete-bin-line"></i>
+                Clear Text
+            </button>
+            <button id="resetBtn" class="btn">
+                <i class="ri-refresh-line"></i>
+                Reset All
+            </button>
+            <button id="languageBtn" class="btn">
+                <i class="ri-translate-2"></i>
+                English
+            </button>
+        </div>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle">
+        <i class="ri-sun-line"></i>
+    </button>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
